@@ -122,6 +122,11 @@ DEF_GOAL (GES080000000,   1, "ges080000000",  { r = HIGHONE_N & -((signed_word) 
 DEF_GOAL (LTS080000000,   1, "lts080000000",  { r = HIGHONE_N & -((signed_word) v0 < 0); })
 DEF_GOAL (GTS080000000,   1, "gts080000000",  { r = HIGHONE_N & -((signed_word) v0 > 0); })
 
+DEF_GOAL (MUL10,           1, "mul10",        { r = (unsigned_word) v0 * 10;  })
+DEF_GOAL (MUL100,          1, "mul100",       { r = (unsigned_word) v0 * 100;  })
+
+
+
 DEF_GOAL (MAXS,           2, "maxs",        { r = (signed_word) v0 > (signed_word) v1 ? v0 : v1; })
 DEF_GOAL (MINS,           2, "mins",        { r = (signed_word) v0 < (signed_word) v1 ? v0 : v1; })
 DEF_GOAL (MAXU,           2, "maxu",        { r = (unsigned_word) v0 > (unsigned_word) v1 ? v0 : v1; })

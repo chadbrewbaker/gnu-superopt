@@ -5,7 +5,7 @@ EXTRA = -shifts -extracts
 
 CC = gcc
 DBG = -g
-OPT = -O
+OPT = -O2
 CFLAGS = $(CPU) $(OPT) $(DBG)
 ALL_MACHINES =	superopt-sparc \
 		superopt-power \
